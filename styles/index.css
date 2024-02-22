@@ -1,0 +1,43 @@
+#body{
+   
+   /* Set the background image */
+   background-image: url('../images/background.jpg');
+    
+   /* Set background size */
+   background-size: cover; /* or contain, etc. */
+   
+   /* Set background position */
+   background-position: center center; /* or top left, etc. */
+   
+   /* Set background repeat */
+   background-repeat: no-repeat;
+}
+h1{
+    font-family: "Montez", cursive;
+    
+}
+h6{
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+  font-style: normal;
+  f
+}
+#header {
+    display: flex;
+    padding: 10px;
+}
+logo{
+    flex: 20%;
+    /* background-color:pink; */
+}
+signup{
+    
+    /* background-color: aqua; */
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    }
