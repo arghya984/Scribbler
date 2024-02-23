@@ -37,19 +37,6 @@
         <button class="btn btn-warning">Create Posts</button>
       </div>
     </main>
-    <!-- <div id="signupModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Signup Form</h2>
-        <form action="#">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" /><br /><br />
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" /><br /><br />
-          <button type="submit">Signup</button>
-        </form>
-      </div>
-    </div> -->
 
     <div class="modal" tabindex="-1" id="signupModal">
       <div class="modal-dialog">
@@ -73,6 +60,7 @@
                 id="name"
                 placeholder="Enter your name"
                 style="width: 100%"
+                required
               />
               <br /><br />
 
@@ -84,6 +72,7 @@
                 name="username"
                 placeholder="Enter your username"
                 style="width: 100%"
+                required
               /><br /><br />
 
               <label for="password">Password:</label> <br />
@@ -93,20 +82,79 @@
                 name="password"
                 placeholder="Enter your password"
                 style="width: 100%"
+                required
               /><br /><br />
               <label for="confirtpassword"> Confirm Password:</label> <br />
               <input
                 type="password"
-                id="confirtpassword"
-                name="confirtpassword"
+                id="confirmpassword"
+                name="confirmpassword"
                 placeholder="Re-enter your password"
                 style="width: 100%"
+                required
               />
               <br /><br />
-              <button type="submit" style="width: 100%" class="btn btn-success">
-                Signup
+              <button
+                type="submit"
+                style="width: 100%"
+                class="btn btn-success"
+                id="sign-up-btn-modal"
+              >
+                Sign Up
               </button>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="signinModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome Back!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <label for="username">Username:</label>
+              <br />
+              <input
+                type="text"
+                name="username"
+                placeholder="Enter your username"
+                style="width: 100%"
+                required
+              /><br /><br />
+
+              <label for="password">Password:</label> <br />
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                style="width: 100%"
+                required
+              /><br /><br />
+
+              <button type="submit" style="width: 100%" class="btn btn-success">
+                Sign In
+              </button>
+            </form>
+            <br />
+            <p>
+              Not a member?
+              <a
+                href="#"
+                onclick="openSignupModal(); return false;"
+                style="text-decoration: none"
+                >Sign Up</a
+              >
+            </p>
           </div>
         </div>
       </div>

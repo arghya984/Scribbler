@@ -43,6 +43,10 @@ signup{
     }
 
 
+    p{
+        text-align: center;
+    }
+
 
 
     .modal {
@@ -67,7 +71,7 @@ signup{
       .close {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 8px;
         font-weight: bold;
       }
       
