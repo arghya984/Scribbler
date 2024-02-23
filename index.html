@@ -1,33 +1,123 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
-     <link rel="stylesheet" href="styles/index.css"> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="body" background="images/background.jpg">
+  <body id="body" background="images/background.jpg">
     <!-- TODO: Include all your code for the header and home page here -->
-   <div id="header">
+    <main id="mainbody">
+      <div id="header">
         <logo>
-            <h1 style="color: blue;">ScriBBler</h1>
-            <h6>Explore, Imagine, Create</h6>
+          <h1 style="color: blue">ScriBBler</h1>
+          <h6>Explore, Imagine, Create</h6>
         </logo>
         <signup>
-            <button class="btn btn-primary">Sign Up</button>
-            <button class="btn btn-primary"> Sign In</button>
+          <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+          <button class="btn btn-primary" id="signinBtn">Sign In</button>
         </signup>
-    </div>
-    <div id="content">
-        <button class="btn btn-warning" >All Posts</button>
+      </div>
+      <div id="content">
+        <button class="btn btn-warning">All Posts</button>
 
-            <button class="btn btn-warning" >Create Posts</button>
-    </div>
-</body>
+        <button class="btn btn-warning">Create Posts</button>
+      </div>
+    </main>
+    <!-- <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Signup Form</h2>
+        <form action="#">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" /><br /><br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br /><br />
+          <button type="submit">Signup</button>
+        </form>
+      </div>
+    </div> -->
 
+    <div class="modal" tabindex="-1" id="signupModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get Started</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <label for="name" placeholder="Enter your name">Name</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                style="width: 100%"
+              />
+              <br /><br />
+
+              <label for="username">Username:</label>
+              <br />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                style="width: 100%"
+              /><br /><br />
+
+              <label for="password">Password:</label> <br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                style="width: 100%"
+              /><br /><br />
+              <label for="confirtpassword"> Confirm Password:</label> <br />
+              <input
+                type="password"
+                id="confirtpassword"
+                name="confirtpassword"
+                placeholder="Re-enter your password"
+                style="width: 100%"
+              />
+              <br /><br />
+              <button type="submit" style="width: 100%" class="btn btn-success">
+                Signup
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    ;
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
