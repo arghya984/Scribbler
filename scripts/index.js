@@ -72,7 +72,7 @@ window.addEventListener("click", (event) => {
       body.style.filter=" blur(8px)";
   });
   closeCreatePostModalBtn.addEventListener("click", ()=>{
-    createPostModal.display="none";
+    createPostModal.style.display="none";
     body.style.filter=" blur(0px)";
   });
 

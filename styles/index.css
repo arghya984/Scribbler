@@ -81,3 +81,8 @@ signup{
         text-decoration: none;
         cursor: pointer;
       }
+      
+      #createPostModalDialog{
+        max-width: 80%;
+        
+      }
