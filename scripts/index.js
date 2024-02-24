@@ -1,9 +1,16 @@
+//creating all the nessesary dom objects
 const signupBtn = document.getElementById("signupBtn");
 const signinBtn= document.getElementById("signinBtn");
 const signupModal = document.getElementById("signupModal");
 const signinModal=document.getElementById("signinModal")
+const createPostModal=document.getElementById("createPostModal");
 const closeSignupModalBtn = document.getElementsByClassName("btn-close")[0];
 const closeSigninModalBtn=document.getElementsByClassName("btn-close")[1];
+const closeCreatePostModalBtn=document.getElementsByClassName("btn-close")[2];
+const createPostBtn=document.getElementById("createPostBtn");
+
+
+//created this body object to apply the blur effect when any modal is opened
 const body=document.getElementById("mainbody");
 // const signupModalBtn = document.getElementById("sign-up-btn-modal");
 
@@ -58,5 +65,14 @@ window.addEventListener("click", (event) => {
       signinModal.style.display = "none";
       body.style.filter=" blur(0px)";
     }
+  });
+
+  createPostBtn.addEventListener("click", ()=>{
+      createPostModal.style.display="block";
+      body.style.filter=" blur(8px)";
+  });
+  closeCreatePostModalBtn.addEventListener("click", ()=>{
+    createPostModal.display="none";
+    body.style.filter=" blur(0px)";
   });
 
