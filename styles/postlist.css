@@ -1,0 +1,88 @@
+#body{
+   
+    
+     
+    /* Set background size */
+    background-size: cover; /* or contain, etc. */
+    
+    background-color: #ffeedd;
+    /* Set background position */
+    background-position: center center; /* or top left, etc. */
+    
+    /* Set background repeat */
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+ }
+h1{
+    font-family: "Montez", cursive;
+    
+}
+h6{
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+  font-style: normal;
+  f
+}
+#header {
+    display: flex ;
+    padding: 10px;
+}
+logo{
+    flex: 20%;
+    /* background-color:pink; */
+}
+#content{
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.post {
+    display: flex;
+    
+    width: 300px; /* Set the width of the card */
+    
+     border-radius: 20px;
+    width: calc(25% - 20px); 
+     margin-bottom: 20px;
+    flex-basis: 45%; 
+    flex-direction: row;
+}
+.post:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.post-username{
+    flex: 1; /* Set the width of the title to 20% */
+    background-color: white;
+    padding: 10px;
+   
+  }
+  
+  .post-content {
+    flex: 4; /* Set the width of the content to 80% */
+    padding: 10px;
+    background-color: #EEEAEA;
+    
+  }
+
+.post:nth-child(5) {
+    margin: 0 auto; /* Centering the last card */
+}
+
+i{
+    color: grey; cursor: pointer;
+}
+.post-content-header{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+
+}
+.post-text{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* Number of lines to display */
+}
