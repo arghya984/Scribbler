@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/post.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</title>
+  </head>
+  <body>
+    <div id="header">
+      <logo>
+        <h1 style="color: blue">ScriBBler</h1>
+        <h6>Explore, Imagine, Create</h6>
+      </logo>
+      <signup>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+        <button class="btn btn-primary" id="signinBtn">Sign In</button>
+      </signup>
+    </div>
+    <div id="content">
+      <h3>Everything you should know about ‘module’ & ‘require’ in Node.js</h3>
+      <div class="post-username">
+        <p>Shristi Gupta</p>
+        <i class="fa-solid fa-pen-to-square"></i>
+      </div>
+      <br /><br />
+      <p>
+        Node.js treats each JavaScript file as a separate module. For instance,
+        if you have a file containing some code and this file is named xyz.js,
+        then this file is treated as a module in Node, and you can say that
+        you’ve created a module named xyz. This modular approach is fundamental
+        to Node.js development, as it allows developers to organize their code
+        into smaller, reusable components, making it easier to manage and
+        maintain large codebases. Modules encapsulate related functionality,
+        variables, and objects, allowing developers to structure their
+        applications in a modular and scalable way. One of the key features of
+        Node.js modules is the ability to import functionality from one module
+        into another using the require function. The require function is used to
+        include modules in Node.js applications, allowing developers to leverage
+        existing modules or libraries, as well as modules they've created
+        themselves. When you require a module in Node.js, the module's code is
+        executed, and any exported functionality is made available for use in
+        the current module. This enables developers to break down their
+        applications into smaller, more manageable pieces, each responsible for
+        a specific aspect of the application's functionality. By leveraging
+        modules and the require function, developers can write cleaner, more
+        modular code, improving code organization, reusability, and
+        maintainability. Additionally, Node.js provides a built-in module system
+        that includes core modules (such as fs for file system operations and
+        http for creating HTTP servers) as well as modules installed via npm
+        (Node Package Manager). These modules can be easily imported into your
+        application using the require function, allowing you to quickly add
+        powerful functionality to your Node.js applications. In summary,
+        understanding modules and the require function is essential for Node.js
+        developers. By leveraging modules, developers can organize their code
+        into smaller, reusable components, making it easier to manage and
+        maintain complex applications. The require function allows developers to
+        import functionality from one module into another, enabling code reuse
+        and promoting a modular architecture. Whether you're building a small
+        script or a large-scale application, mastering modules and require will
+        help you write cleaner, more maintainable Node.js code.
+      </p>
+      <i class="fa-regular fa-thumbs-up" id="likebutton"></i>
+      <p id="likecount">Be the first one to like this!</p>
+    </div>
+    <script src="../scripts/post.js"></script>
+  </body>
+</html>
