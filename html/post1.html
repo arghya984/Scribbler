@@ -35,15 +35,25 @@
       </signup>
     </div>
     <div id="content">
-      <h3 id="post-title" class="editable">
+      <h3 id="post-title" class="editable" contenteditable="true">
         ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
       </h3>
       <div class="post-username">
         <p class="username">Shristi Gupta</p>
-        <i class="fa-solid fa-pen-to-square" id="editIcon"></i>
+        <i
+          class="fa-solid fa-pen-to-square"
+          id="editIcon"
+          onclick="toggleEditSaveButtons()"
+        ></i>
+        <i
+          id="saveIcon"
+          class="fa-regular fa-floppy-disk"
+          style="display: none"
+          onclick="saveChanges()"
+        ></i>
       </div>
       <br /><br />
-      <p id="post-content" class="editable">
+      <p id="post-content" class="editable" contenteditable="true">
         Since JavaScript does not have any type-checking, either of these
         keywords can be used to declare a variable of any type (datatype) in
         JavaScript. Though all the three keywords are used for the same purpose,
@@ -91,6 +101,7 @@
           rows="4"
           cols="50"
           placeholder="Leave a comment..."
+          required
         ></textarea
         ><br />
         <button type="button" onclick="submitComment()">Comment</button>

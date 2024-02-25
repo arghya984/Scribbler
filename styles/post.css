@@ -51,3 +51,11 @@ i{
     background-color: #D5D5D5;
     padding: 10px;
 }
+
+
+.editable {
+    border: 2px solid transparent;
+}
+.editable.editing {
+    border-color: pink;
+}

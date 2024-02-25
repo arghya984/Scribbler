@@ -38,7 +38,17 @@
       <h3>Everything you should know about ‘module’ & ‘require’ in Node.js</h3>
       <div class="post-username">
         <p class="username">Shristi Gupta</p>
-        <i class="fa-solid fa-pen-to-square"></i>
+        <i
+          class="fa-solid fa-pen-to-square"
+          id="editIcon"
+          onclick="toggleEditSaveButtons()"
+        ></i>
+        <i
+          id="saveIcon"
+          class="fa-regular fa-floppy-disk"
+          style="display: none"
+          onclick="saveChanges()"
+        ></i>
       </div>
       <br /><br />
       <p>
@@ -85,6 +95,7 @@
           rows="4"
           cols="50"
           placeholder="Leave a comment..."
+          required
         ></textarea
         ><br />
         <button type="button" onclick="submitComment()">Comment</button>
