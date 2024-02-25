@@ -1,5 +1,50 @@
-div{
-    border: 2px;
-    border-style: solid;
+
+h1{
+    font-family: "Montez", cursive;
     
+}
+h6{
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+  font-style: normal;
+  
+}
+#header {
+    display: flex ;
+    padding: 10px;
+}
+logo{
+    flex: 20%;
+    
+}
+#content{
+    padding: 50px;
+}
+h3{
+    text-align: center;
+}
+.post-username{
+    display: flex;
+    justify-content: space-between;
+}
+i{
+    cursor: pointer;
+}
+.username{
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+  font-style: normal;
+}
+#commentsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#commentsList li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
 }

@@ -37,7 +37,7 @@
     <div id="content">
       <h3>What is linting and how can it save you time?</h3>
       <div class="post-username">
-        <p>Colby Fayock</p>
+        <p class="username">Colby Fayock</p>
         <i class="fa-solid fa-pen-to-square"></i>
       </div>
       <br /><br />
@@ -102,6 +102,21 @@
       </p>
       <i class="fa-regular fa-thumbs-up" id="likebutton"></i>
       <p id="likecount">Be the first one to like this!</p>
+      <form id="commentForm">
+        <textarea
+          id="commentInput"
+          rows="4"
+          cols="50"
+          placeholder="Leave a comment..."
+        ></textarea
+        ><br />
+        <button type="button" onclick="submitComment()">Comment</button>
+      </form>
+      <br />
+      <div id="allComments">
+        <h5>All Comments</h5>
+        <ul id="commentsList"></ul>
+      </div>
     </div>
     <script src="../scripts/post.js"></script>
   </body>

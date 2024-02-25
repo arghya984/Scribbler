@@ -37,7 +37,7 @@
     <div id="content">
       <h3>How to write easily describable code</h3>
       <div class="post-username">
-        <p>Cedd Burge</p>
+        <p class="username">Cedd Burge</p>
         <i class="fa-solid fa-pen-to-square"></i>
       </div>
       <br /><br />
@@ -68,6 +68,21 @@
       </p>
       <i class="fa-regular fa-thumbs-up" id="likebutton"></i>
       <p id="likecount">Be the first one to like this!</p>
+      <form id="commentForm">
+        <textarea
+          id="commentInput"
+          rows="4"
+          cols="50"
+          placeholder="Leave a comment..."
+        ></textarea
+        ><br />
+        <button type="button" onclick="submitComment()">Comment</button>
+      </form>
+      <br />
+      <div id="allComments">
+        <h5>All Comments</h5>
+        <ul id="commentsList"></ul>
+      </div>
     </div>
     <script src="../scripts/post.js"></script>
   </body>
